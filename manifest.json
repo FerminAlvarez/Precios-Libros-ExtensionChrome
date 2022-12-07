@@ -3,10 +3,7 @@
     "name" : "Precios Libros - Argentina",
     "version" : "1.0.0",
     "action" : {
-        "default_popup" : "popup.html",
-        "default_icon": {
-            "32" : "/logo_38.png"
-        }
+        "default_popup" : "popup.html"
     }
         
 }

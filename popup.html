@@ -6,9 +6,14 @@
 <body>
     <h1>Precios Libros <br> Argentina</h1>
     <div class="search-container">
-        <input required id="ISBN" placeholder="ISBN"/>
+        <input required id="ISBN" placeholder="ISBN" type="number"/>
+        <div id="wrong-container">
+            
+        </div>
         <button id="search" class="button">Buscar</button>
     </div>
-    <script src="js/opentab.js"></script>
+
+    <script type="module" src="js/utils/ISBNValidator.js"></script>
+    <script type="module" src="js/popup.js"></script>
 </body>
 </html>

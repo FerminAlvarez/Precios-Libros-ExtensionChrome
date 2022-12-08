@@ -1,16 +1,11 @@
 import {isValidISBN} from './utils/ISBNValidator.js'
 
-let wrong_container = document.getElementById("wrong-container");
+const wrong_container = document.getElementById("wrong-container");
 
 document.getElementById("search").onclick = () => {
-  let input = document.getElementById("ISBN").value;
+  let ISBN = document.getElementById("ISBN").value;
 
-  if(isValidISBN(input)){
-    createTab(input);
-  }else{
-    setMessageError();
-  }
-
+  isValidISBN(ISBN) ? createTab(ISBN) : setMessageError();
 };
 
 function createTab(ISBN){

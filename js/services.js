@@ -1,2 +1,7 @@
-let services = ["http://localhost:3000/", "http://localhost:5000/"];
+let services = [
+    "https://precioslibrosapi-production.up.railway.app/buscalibre/",
+    "https://precioslibrosapi-production.up.railway.app/cuspide/",
+    "https://precioslibrosapi-production.up.railway.app/libreriadonquijote/",
+    "https://precioslibrosapi-production.up.railway.app/tematika/"
+];
 export {services};

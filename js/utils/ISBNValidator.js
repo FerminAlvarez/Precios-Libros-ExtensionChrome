@@ -1,7 +1,8 @@
 function isValidISBN(ISBN){
-// Checks for ISBN-10 or ISBN-13 format
-var regex = /^(?:ISBN(?:-1[03])?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$|97[89][0-9]{10}$|(?=(?:[0-9]+[- ]){4})[- 0-9]{17}$)(?:97[89][- ]?)?[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$/;
-    
+    // Checks for ISBN-10 or ISBN-13 format
+    let regex = /^(?:ISBN(?:-1[03])?:? )?(?=[0-9X]{10}$|(?=(?:[0-9]+[- ]){3})[- 0-9X]{13}$|97[89][0-9]{10}$|(?=(?:[0-9]+[- ]){4})[- 0-9]{17}$)(?:97[89][- ]?)?[0-9]{1,5}[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$/;
+
+    ISBN = ISBN.replaceAll('-','');
     if (regex.test(ISBN)) {
         // Remove non ISBN digits, then split into an array
         var chars = ISBN.replace(/[- ]|^ISBN(?:-1[03])?:?/g, "").split("");

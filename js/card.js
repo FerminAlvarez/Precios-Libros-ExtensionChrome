@@ -12,4 +12,4 @@ function createCard(link, link_imagen, titulo, libreria, precio) {
         </div>
     `
 }
-export {createCard, createEmptyCard}
+export {createCard}

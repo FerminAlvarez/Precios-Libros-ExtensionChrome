@@ -1,5 +1,5 @@
 import {services} from './services.js'
-import {createCard, createEmptyCard} from './card.js'
+import {createCard} from './card.js'
 
 const currentURL = window.location.search;
 const urlParams = new URLSearchParams(currentURL);
@@ -10,6 +10,7 @@ for (let i = 0; i < services.length; i++) {
   fetch(services[i] + ISBN)
   .then((response) => response.json())
   .then((data) => {
-    if (data === undefined) row.innerHTML += createCard(data.link, data.link_imagen, data.titulo, data.libreria, data.precio)
+    console.log(data)
+    if (data !== undefined) row.innerHTML += createCard(data.link, data.link_imagen, data.titulo, data.libreria, data.precio)
   });
 }

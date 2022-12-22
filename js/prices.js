@@ -10,7 +10,6 @@ for (let i = 0; i < services.length; i++) {
   fetch(services[i] + ISBN)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data)
-    if (data !== undefined) row.innerHTML += createCard(data.link, data.link_imagen, data.titulo, data.libreria, data.precio)
+    if (data.libreria !== undefined) row.innerHTML += createCard(data.link, data.link_imagen, data.titulo, data.libreria, data.precio)
   });
 }

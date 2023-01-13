@@ -1,4 +1,6 @@
 # Precios Libros ExtensionChrome
+## Vista previa
+![Precios Libros Extensión Chrome - Screenshot](https://i.imgur.com/hFQHlS5.png)
 ## Idea
 La idea de este proyecto surgió cuando estaba viendo precios de libros y cada vez que veía uno interesante quería ver en otras páginas que suelo consultar cuál era su precio y poder decidirme. Se me ocurrió que estaría bueno que simplemente copiando el ISBN del libro en cuestión pueda ver el precio que se encuentra en el resto de librerías.
 
